@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`initial state renders without crashing 1`] = `
+<section>
+  <div
+    className="o-expandable_header o-expandable_target"
+  >
+    <h4
+      className="o-expandable_header-left o-expandable_label"
+    />
+  </div>
+  
+</section>
+`;

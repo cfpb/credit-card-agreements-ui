@@ -1,0 +1,34 @@
+@import (less) "base.less";
+
+.filter-panel {
+  padding: @gutter-normal;
+
+  @media @desktop {
+    padding: @grid_gutter-width;
+  }
+
+  border: 1px solid @gray-40;
+
+  background: @gray-5;
+
+  hr {
+    margin-top: @gutter-normal;
+    margin-bottom: @gutter-normal;
+
+    color: @gray-40;
+  }
+
+  .clear {
+    margin-left: @gutter-normal;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    overflow: hidden;
+    padding-box: 5px;
+  }
+
+}

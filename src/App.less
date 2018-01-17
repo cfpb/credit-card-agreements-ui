@@ -1,0 +1,179 @@
+@import (less) "~cf-core/src/cf-core.less";
+@import (less) "~cf-icons/src/cf-icons.less";
+@import (less) "~cf-buttons/src/cf-buttons.less";
+@import (less) "~cf-forms/src/cf-forms.less";
+@import (less) "~cf-grid/src/cf-grid.less";
+@import (less) "~cf-layout/src/cf-layout.less";
+@import (less) "~cf-typography/src/cf-typography.less";
+@import (less) "~cf-pagination/src/cf-pagination.less";
+@import (less) "~cf-expandables/src/cf-expandables.less";
+@import (less) "~cf-tables/src/cf-tables.less";
+
+@import (less) "base.less";
+
+// App-wide definitions
+
+.layout-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.layout-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-fixed {
+    flex: none;
+}
+
+.flex-all {
+    flex: 1 0 auto;
+}
+
+.lt-ie10 {
+    .layout-row {
+        display: table;
+    }
+
+    .layout-column {
+        display: table;
+    }
+
+    .flex-fixed {
+        float: left;
+    }
+
+    .flex-all {
+        float: left;
+    }
+}
+
+.body-copy {
+    font-size: 16px;
+}
+
+.cols {
+    .grid_nested-col-group();
+}
+
+.col:before {
+    display: block;
+
+    width: 100%;
+    content: "";
+}
+
+.col-1 {
+    .grid_column( 1 );
+}
+
+.col-2 {
+    .grid_column( 2 );
+}
+
+.col-3 {
+    .grid_column( 3 );
+}
+
+.col-4 {
+    .grid_column( 4 );
+}
+
+.col-6 {
+    .grid_column( 6 );
+}
+
+.col-8 {
+    .grid_column( 8 );
+}
+
+.col-9 {
+    .grid_column( 9 );
+}
+
+.col-10 {
+    .grid_column( 10 );
+}
+
+.col-12 {
+    .grid_column( 12 );
+}
+
+// Overrides
+
+.content__1-3 {
+    margin-bottom: @grid_gutter-width * 2;
+
+    .content_wrapper {
+        padding-left: 0;
+        padding-right: 0;
+
+        max-width: initial;
+    }
+
+    .content_sidebar {
+        width: 420px;
+        padding: 0;
+        border: 0;
+        margin: 0;
+    }
+
+    .content_main {
+        width: ~"calc(100% - 420px)";
+        padding: 0;
+        border: 0;
+
+        &:after {
+            border-left: 0;
+        }
+    }
+}
+
+@media @tablet {
+    .content__1-3 {
+        .content_sidebar {
+            width: 305px;
+        }
+
+        .content_main {
+            width: ~"calc(100% - 305px)";
+        }
+    }
+}
+
+@media @phone {
+    .content__1-3 {
+        margin-bottom: 0;
+
+        .content_sidebar {
+            width: 0;
+            display: none;
+        }
+
+        .content_main {
+            width: 100%;
+        }
+    }
+}
+
+body {
+    a, .a-btn__link {
+        font-family: @webfont-medium;
+
+        color: @link-text;
+
+        &:hover {
+            color: @link-text-hover;
+        }
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+}
+
+::-ms-clear {
+    display: none;
+}

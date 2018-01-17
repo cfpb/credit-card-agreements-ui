@@ -1,0 +1,621 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`initial state renders without crashing 1`] = `
+<section
+  className="filter-panel"
+>
+  <h3>
+    Filter results by...
+  </h3>
+  <section
+    className="single-checkbox"
+  >
+    <h4>
+      Only show complaints with narratives?
+    </h4>
+    <div
+      className="m-form-field m-form-field__checkbox"
+    >
+      <input
+        checked={false}
+        className="a-checkbox"
+        disabled={false}
+        id="filterHasNarrative"
+        onChange={[Function]}
+        type="checkbox"
+        value="has_narrative"
+      />
+      <label
+        className="a-label"
+        htmlFor="filterHasNarrative"
+      >
+        Yes
+      </label>
+    </div>
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation date-filter"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Date CFPB received the complaint
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-close"
+          onClick={[Function]}
+        >
+          Hide
+          <span
+            className="cf-icon cf-icon-minus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p />
+    <div>
+      <ul
+        className="date-inputs"
+      >
+        <li>
+          <label
+            className="a-label a-label__heading body-copy"
+          >
+            From
+          </label>
+          <div
+            className="m-btn-inside-input"
+          >
+            <input
+              aria-describedby="input-error_message-from"
+              className="a-text-input"
+              max={null}
+              min={2011-11-30T12:00:00.000Z}
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              size="15"
+              value=""
+            />
+          </div>
+        </li>
+        <li>
+          <label
+            className="a-label a-label__heading body-copy"
+          >
+            Through
+          </label>
+          <div
+            className="m-btn-inside-input"
+          >
+            <input
+              aria-describedby="input-error_message-through"
+              className="a-text-input"
+              max={null}
+              min={2011-11-30T12:00:00.000Z}
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              size="15"
+              value=""
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Company name
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-close"
+          onClick={[Function]}
+        >
+          Hide
+          <span
+            className="cf-icon cf-icon-minus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p>
+      The company name as it appears in our complaint system, which may be different than the name the consumer provided in their complaint
+    </p>
+    <section
+      className="typeahead "
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        className="m-btn-inside-input input-contains-label"
+      >
+        <label
+          className="input-contains-label_before input-contains-label_before__search"
+        />
+        <input
+          autoComplete="off"
+          className="a-text-input"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Enter company name"
+          type="text"
+          value=""
+        />
+      </div>
+    </section>
+    <ul />
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Product / sub-product
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-close"
+          onClick={[Function]}
+        >
+          Hide
+          <span
+            className="cf-icon cf-icon-minus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p>
+      The type of product and sub-product the consumer identified in the complaint
+    </p>
+    <p>
+      <a
+        className="a-btn__link"
+        href="http://files.consumerfinance.gov/f/documents/201704_cfpb_Summary_of_Product_and_Sub-product_Changes.pdf"
+        target="_blank"
+      >
+        Recent changes to products and sub-products
+      </a>
+    </p>
+    <div>
+      <ul />
+    </div>
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Issue / sub-issue
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-close"
+          onClick={[Function]}
+        >
+          Hide
+          <span
+            className="cf-icon cf-icon-minus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p>
+      The type of issue and sub-issue the consumer identified in the complaint
+    </p>
+    <section
+      className="typeahead "
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        className="m-btn-inside-input input-contains-label"
+      >
+        <label
+          className="input-contains-label_before input-contains-label_before__search"
+        />
+        <input
+          autoComplete="off"
+          className="a-text-input"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Enter name of issue"
+          type="text"
+          value=""
+        />
+      </div>
+    </section>
+    <div>
+      <ul />
+    </div>
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        State
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-close"
+          onClick={[Function]}
+        >
+          Hide
+          <span
+            className="cf-icon cf-icon-minus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p>
+      The state of the mailing address provided by the consumer
+    </p>
+    <section
+      className="typeahead "
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        className="m-btn-inside-input input-contains-label"
+      >
+        <label
+          className="input-contains-label_before input-contains-label_before__search"
+        />
+        <input
+          autoComplete="off"
+          className="a-text-input"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Enter state name or abbreviation"
+          type="text"
+          value=""
+        />
+      </div>
+    </section>
+    <ul />
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Zip code
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-close"
+          onClick={[Function]}
+        >
+          Hide
+          <span
+            className="cf-icon cf-icon-minus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p>
+      The mailing ZIP code provided by the consumer
+    </p>
+    <section
+      className="typeahead "
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        className="m-btn-inside-input input-contains-label"
+      >
+        <label
+          className="input-contains-label_before input-contains-label_before__search"
+        />
+        <input
+          autoComplete="off"
+          className="a-text-input"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Enter first three digits of ZIP code"
+          type="text"
+          value=""
+        />
+      </div>
+    </section>
+    <ul />
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Did company provide a timely response?
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-open"
+          onClick={[Function]}
+        >
+          Show
+          <span
+            className="cf-icon cf-icon-plus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p />
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Company response
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-open"
+          onClick={[Function]}
+        >
+          Show
+          <span
+            className="cf-icon cf-icon-plus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p>
+      How the company responded to the complaint
+    </p>
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Company public response
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-open"
+          onClick={[Function]}
+        >
+          Show
+          <span
+            className="cf-icon cf-icon-plus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p>
+      The company's optional public-facing response to a consumer's complaint
+    </p>
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation date-filter"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Date complaint sent to company
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-close"
+          onClick={[Function]}
+        >
+          Hide
+          <span
+            className="cf-icon cf-icon-minus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p />
+    <div>
+      <ul
+        className="date-inputs"
+      >
+        <li>
+          <label
+            className="a-label a-label__heading body-copy"
+          >
+            From
+          </label>
+          <div
+            className="m-btn-inside-input"
+          >
+            <input
+              aria-describedby="input-error_message-from"
+              className="a-text-input"
+              max={null}
+              min={2011-11-30T12:00:00.000Z}
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              size="15"
+              value=""
+            />
+          </div>
+        </li>
+        <li>
+          <label
+            className="a-label a-label__heading body-copy"
+          >
+            Through
+          </label>
+          <div
+            className="m-btn-inside-input"
+          >
+            <input
+              aria-describedby="input-error_message-through"
+              className="a-text-input"
+              max={null}
+              min={2011-11-30T12:00:00.000Z}
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              size="15"
+              value=""
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Consumer consent
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-open"
+          onClick={[Function]}
+        >
+          Show
+          <span
+            className="cf-icon cf-icon-plus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p>
+      Whether a consumer opted to publish their compaint narrative
+    </p>
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        How did the consumer submit the complaint to the CFPB?
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-open"
+          onClick={[Function]}
+        >
+          Show
+          <span
+            className="cf-icon cf-icon-plus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p />
+  </section>
+  <hr />
+  <section
+    className="o-expandable aggregation"
+  >
+    <div
+      className="o-expandable_header o-expandable_target"
+    >
+      <h4
+        className="o-expandable_header-left o-expandable_label"
+      >
+        Tags
+      </h4>
+      <span
+        className="o-expandable_header-right o-expandable_link"
+      >
+        <button
+          className="a-btn a-btn__link o-expandable_cue o-expandable_cue-open"
+          onClick={[Function]}
+        >
+          Show
+          <span
+            className="cf-icon cf-icon-plus-round"
+          />
+        </button>
+      </span>
+    </div>
+    <p>
+      Data that supports easier searching and sorting of complaints submitted by or on behalf of older Americans and/or servicemembers
+    </p>
+  </section>
+</section>
+`;

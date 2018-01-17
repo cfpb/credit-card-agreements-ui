@@ -1,0 +1,20 @@
+{% extends ccadb2_base_template %}
+{% load static %}
+{% load humanize %}
+{% block title %}Development Harness{% endblock %}
+{% block nemo_styles %}
+
+{% endblock %}
+{% block page_css %}
+    <style> body {padding-left: 30px; padding-right: 30px; max-width: 1200px;}</style>
+    <link rel="stylesheet" href="https://cfpb.github.io/capital-framework/dist/static/css/main.min.css">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <script src="https://cfpb.github.io/capital-framework/dist/static/js/main.min.js"></script>
+{% endblock %}
+{% block responsive_nav %}
+<a class="toggle-menu" href="#"><i class="cf-icon cf-icon-menu"></i><span class="u-visually-hidden">Menu</span></a>
+{% endblock %}
+{% block content %}
+<div id="root" data-agreement-count="{{ agreement_count|intcomma }}"></div>
+<script src="{% static 'ccadb2.min.js' %}" type="text/javascript"></script>
+{% endblock %}
