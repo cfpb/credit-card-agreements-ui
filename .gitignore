@@ -7,6 +7,8 @@
 *.o
 *.so
 _site/
+dist/
+build/
 
 # Packages #
 ############
