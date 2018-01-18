@@ -21,7 +21,7 @@ setup(
     maintainer_email='tech@cfpb.gov',
     packages=find_packages(),
     package_data={'ccadb2_ui': [
-        'templates/*.html',
+        'templates/ccadb2_ui/*.html',
         'static/*',
         'fixtures/*.json'
     ]},
