@@ -20,13 +20,27 @@ const sorts = {
 
 export class ActionBar extends React.Component {
   render() {
+    // This is a hideous hack. When no filter is selected, the API returns
+    // 20 results so we're checking for that quantity. Yes, if a series of
+    // filter selections results in 20 results it will erroneously display
+    // this message. We should instead check if filters are selected and if not,
+    // display this message.
+    if ( this.props.total === 20 ) {
+      return (
+        <summary className="action-bar">
+          <div>
+            <h4>Showing all credit cards</h4>
+          </div>
+        </summary>
+      );
+    }
     return (
         <summary className="action-bar">
           <div>
             <h4>
               Showing&nbsp;
               <FormattedNumber value={this.props.total} />
-              &nbsp;matching results
+              &nbsp;matched results
             </h4>
           </div>
         </summary>
