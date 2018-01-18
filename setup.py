@@ -20,12 +20,11 @@ setup(
     maintainer='cfpb',
     maintainer_email='tech@cfpb.gov',
     packages=find_packages(),
-    package_data={
-        'ccadb2_ui': [
-            'templates/index.html',
-            'static/*'
-        ]
-    },
+    package_data={'ccadb2_ui': [
+        'templates/*.html',
+        'static/*',
+        'fixtures/*.json'
+    ]},
     include_package_data=True,
     description=u'Consumer Complaint Database UI',
     classifiers=[
