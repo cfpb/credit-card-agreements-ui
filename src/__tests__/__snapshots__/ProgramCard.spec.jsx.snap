@@ -1,0 +1,517 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`initial state hides the section when there is no narrative 1`] = `
+<li
+  className="card-container"
+>
+  <div
+    className="layout-row"
+  >
+    <h3
+      className="to-detail"
+    >
+      1
+      . 
+      <a
+        href="detail/1234"
+      >
+        ABC Corp
+      </a>
+    </h3>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-left layout-column"
+    >
+      <h4>
+        Issuer name
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Acme Bank",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Initial offer date
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "1/1/18",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Program withdrawal date
+      </h4>
+      <span>
+        Not applicable, still active
+      </span>
+    </div>
+    <div
+      className="card-right layout-column"
+    >
+      <h4>
+        Download most recent agreements for this card
+      </h4>
+      <p>
+        <br />
+        <a
+          href="https://consumerfinance.gov"
+        >
+          ABC Corp
+        </a>
+         (
+        110KB
+        )
+      </p>
+      <p>
+        <a
+          href="detail/1234"
+        >
+          View all agreements for 
+          ABC Corp
+        </a>
+      </p>
+    </div>
+  </div>
+</li>
+`;
+
+exports[`initial state hides the section when there is no sub-issue 1`] = `
+<li
+  className="card-container"
+>
+  <div
+    className="layout-row"
+  >
+    <h3
+      className="to-detail"
+    >
+      1
+      . 
+      <a
+        href="detail/1234"
+      >
+        ABC Corp
+      </a>
+    </h3>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-left layout-column"
+    >
+      <h4>
+        Issuer name
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Acme Bank",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Initial offer date
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "1/1/18",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Program withdrawal date
+      </h4>
+      <span>
+        Not applicable, still active
+      </span>
+    </div>
+    <div
+      className="card-right layout-column"
+    >
+      <h4>
+        Download most recent agreements for this card
+      </h4>
+      <p>
+        <br />
+        <a
+          href="https://consumerfinance.gov"
+        >
+          ABC Corp
+        </a>
+         (
+        110KB
+        )
+      </p>
+      <p>
+        <a
+          href="detail/1234"
+        >
+          View all agreements for 
+          ABC Corp
+        </a>
+      </p>
+    </div>
+  </div>
+</li>
+`;
+
+exports[`initial state hides the section when there is no sub-product 1`] = `
+<li
+  className="card-container"
+>
+  <div
+    className="layout-row"
+  >
+    <h3
+      className="to-detail"
+    >
+      1
+      . 
+      <a
+        href="detail/1234"
+      >
+        ABC Corp
+      </a>
+    </h3>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-left layout-column"
+    >
+      <h4>
+        Issuer name
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Acme Bank",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Initial offer date
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "1/1/18",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Program withdrawal date
+      </h4>
+      <span>
+        Not applicable, still active
+      </span>
+    </div>
+    <div
+      className="card-right layout-column"
+    >
+      <h4>
+        Download most recent agreements for this card
+      </h4>
+      <p>
+        <br />
+        <a
+          href="https://consumerfinance.gov"
+        >
+          ABC Corp
+        </a>
+         (
+        110KB
+        )
+      </p>
+      <p>
+        <a
+          href="detail/1234"
+        >
+          View all agreements for 
+          ABC Corp
+        </a>
+      </p>
+    </div>
+  </div>
+</li>
+`;
+
+exports[`initial state includes an overflow link when the narrative is long 1`] = `
+<li
+  className="card-container"
+>
+  <div
+    className="layout-row"
+  >
+    <h3
+      className="to-detail"
+    >
+      1
+      . 
+      <a
+        href="detail/1234"
+      >
+        ABC Corp
+      </a>
+    </h3>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-left layout-column"
+    >
+      <h4>
+        Issuer name
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Acme Bank",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Initial offer date
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "1/1/18",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Program withdrawal date
+      </h4>
+      <span>
+        Not applicable, still active
+      </span>
+    </div>
+    <div
+      className="card-right layout-column"
+    >
+      <h4>
+        Download most recent agreements for this card
+      </h4>
+      <p>
+        <br />
+        <a
+          href="https://consumerfinance.gov"
+        >
+          ABC Corp
+        </a>
+         (
+        110KB
+        )
+      </p>
+      <p>
+        <a
+          href="detail/1234"
+        >
+          View all agreements for 
+          ABC Corp
+        </a>
+      </p>
+    </div>
+  </div>
+</li>
+`;
+
+exports[`initial state removes <em> highlighting tags effectively from text 1`] = `
+<li
+  className="card-container"
+>
+  <div
+    className="layout-row"
+  >
+    <h3
+      className="to-detail"
+    >
+      1
+      . 
+      <a
+        href="detail/1234"
+      >
+        ABC Corp
+      </a>
+    </h3>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-left layout-column"
+    >
+      <h4>
+        Issuer name
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Acme Bank",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Initial offer date
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "1/1/18",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Program withdrawal date
+      </h4>
+      <span>
+        Not applicable, still active
+      </span>
+    </div>
+    <div
+      className="card-right layout-column"
+    >
+      <h4>
+        Download most recent agreements for this card
+      </h4>
+      <p>
+        <br />
+        <a
+          href="https://consumerfinance.gov"
+        >
+          ABC Corp
+        </a>
+         (
+        110KB
+        )
+      </p>
+      <p>
+        <a
+          href="detail/1234"
+        >
+          View all agreements for 
+          ABC Corp
+        </a>
+      </p>
+    </div>
+  </div>
+</li>
+`;
+
+exports[`initial state renders without crashing 1`] = `
+<li
+  className="card-container"
+>
+  <div
+    className="layout-row"
+  >
+    <h3
+      className="to-detail"
+    >
+      1
+      . 
+      <a
+        href="detail/1234"
+      >
+        ABC Corp
+      </a>
+    </h3>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-left layout-column"
+    >
+      <h4>
+        Issuer name
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Acme Bank",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Initial offer date
+      </h4>
+      <span
+        className="body-copy"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "1/1/18",
+          }
+        }
+      />
+      <br />
+      <h4>
+        Program withdrawal date
+      </h4>
+      <span>
+        Not applicable, still active
+      </span>
+    </div>
+    <div
+      className="card-right layout-column"
+    >
+      <h4>
+        Download most recent agreements for this card
+      </h4>
+      <p>
+        <br />
+        <a
+          href="https://consumerfinance.gov"
+        >
+          ABC Corp
+        </a>
+         (
+        110KB
+        )
+      </p>
+      <p>
+        <a
+          href="detail/1234"
+        >
+          View all agreements for 
+          ABC Corp
+        </a>
+      </p>
+    </div>
+  </div>
+</li>
+`;

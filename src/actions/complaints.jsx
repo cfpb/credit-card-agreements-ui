@@ -22,8 +22,8 @@ export function getComplaints() {
     dispatch( callingApi( uri ) )
     return fetch( uri )
     .then( result => result.json() )
-    .then( items => dispatch( complaintsReceived( items ) ) )
-    .catch( error => dispatch( complaintsFailed( error ) ) )
+    .then( items => dispatch( programsReceived( items ) ) )
+    .catch( error => dispatch( programsFailed( error ) ) )
   }
 }
 
@@ -33,14 +33,14 @@ export function getComplaints() {
 * @param {string} id the id of the complaint to retrieve
 * @returns {Promise} a chain of promises that will update the Redux store
 */
-export function getComplaintDetail( id ) {
+export function getProgramDetail( id ) {
   return dispatch => {
     const uri = '@@API/credit/' + id
     dispatch( callingApi( uri ) )
     fetch( uri )
       .then( result => result.json() )
-      .then( data => dispatch( complaintDetailReceived( data ) ) )
-      .catch( error => dispatch( complaintDetailFailed( error ) ) )
+      .then( data => dispatch( programDetailReceived( data ) ) )
+      .catch( error => dispatch( programDetailFailed( error ) ) )
   }
 }
 
@@ -63,7 +63,7 @@ export function callingApi( url ) {
 * @param {string} data the raw data returned from the API
 * @returns {string} a packaged payload to be used by Redux reducers
 */
-export function complaintsReceived( data ) {
+export function programsReceived( data ) {
   return {
     type: types.COMPLAINTS_RECEIVED,
     data
@@ -76,7 +76,7 @@ export function complaintsReceived( data ) {
 * @param {string} error the error returned from `fetch`, not the API
 * @returns {string} a packaged payload to be used by Redux reducers
 */
-export function complaintsFailed( error ) {
+export function programsFailed( error ) {
   return {
     type: types.COMPLAINTS_FAILED,
     error
@@ -89,7 +89,7 @@ export function complaintsFailed( error ) {
 * @param {string} data the raw data returned from the API
 * @returns {string} a packaged payload to be used by Redux reducers
 */
-export function complaintDetailReceived( data ) {
+export function programDetailReceived( data ) {
   return {
     type: types.COMPLAINT_DETAIL_RECEIVED,
     data
@@ -102,7 +102,7 @@ export function complaintDetailReceived( data ) {
 * @param {string} error the error returned from `fetch`, not the API
 * @returns {string} a packaged payload to be used by Redux reducers
 */
-export function complaintDetailFailed( error ) {
+export function programDetailFailed( error ) {
   return {
     type: types.COMPLAINT_DETAIL_FAILED,
     error

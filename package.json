@@ -100,7 +100,7 @@
     "test": "node scripts/test.js --env=jsdom --coverage",
     "dev-flow": "node scripts/test.js --env=jsdom --coverage --watch",
     "lint": "node scripts/lint.js",
-    "version": "npm run build && git add -A ccadb2_ui"
+    "version": "npm run build && git add -A ccadb2_ui && python setup.py bdist_wheel"
   },
   "jest": {
     "collectCoverageFrom": [

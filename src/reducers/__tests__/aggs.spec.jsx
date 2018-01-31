@@ -19,27 +19,4 @@ describe('reducer:aggs', () => {
     expect(actual.zip_code).toBeDefined();
   })
 
-  it('handles COMPLAINTS_RECEIVED actions', () => {
-    const action = {
-      type: types.COMPLAINTS_RECEIVED,
-      data: { 
-        aggregations: {
-          'company_response': {
-            'company_response': {
-              buckets: [
-                {key: 'foo', doc_count: 99}
-              ]
-            }
-          }
-        }
-      }
-    }
-    const expected = {
-      company_response: [
-        {key: 'foo', doc_count: 99}
-      ]
-    }
-
-    expect(target({}, action)).toEqual(expected)
-  })
 })

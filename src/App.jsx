@@ -5,12 +5,11 @@ import {
   BrowserRouter as Router,
   Switch
 } from 'react-router-dom'
-
-import ComplaintDetail from './ComplaintDetail'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import FilterPanel from './FilterPanel'
 import Hero from './Hero'
 import { IntlProvider } from 'react-intl'
+import ProgramDetail from './ProgramDetail'
 import { Provider } from 'react-redux'
 import React from 'react'
 // Required so that the expose-loader test works which moves the ReactDOM
@@ -68,7 +67,7 @@ export class DetailComponents extends React.Component {
     return (
       <IntlProvider locale="en">
         <main role="main">
-          <ComplaintDetail complaint_id={complaint_id}/>
+          <ProgramDetail complaint_id={complaint_id}/>
         </main>
       </IntlProvider>
     )

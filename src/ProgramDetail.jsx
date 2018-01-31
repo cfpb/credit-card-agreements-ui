@@ -1,8 +1,8 @@
-import './ComplaintDetail.less';
+import './ProgramDetail.less';
 import { bindAll } from './utils'
 import { connect } from 'react-redux'
 import { FormattedDate } from 'react-intl';
-import { getComplaintDetail } from './actions/complaints'
+import { getProgramDetail } from './actions/complaints'
 import Loading from './Dialogs/Loading'
 import PropTypes from 'prop-types'
 import React from 'react';
@@ -11,7 +11,7 @@ const ERROR = 'ERROR'
 const WAITING = 'WAITING'
 const RESULTS = 'RESULTS'
 
-export class ComplaintDetail extends React.Component {
+export class ProgramDetail extends React.Component {
   constructor( props ) {
     super( props )
 
@@ -224,7 +224,7 @@ export class ComplaintDetail extends React.Component {
 // ----------------------------------------------------------------------------
 // Meta
 
-ComplaintDetail.propTypes = {
+ProgramDetail.propTypes = {
   // eslint-disable-next-line camelcase
   complaint_id: PropTypes.string.isRequired,
   onClickedBack: PropTypes.func,
@@ -232,7 +232,7 @@ ComplaintDetail.propTypes = {
   row: PropTypes.object
 }
 
-ComplaintDetail.defaultProps = {
+ProgramDetail.defaultProps = {
   onClickedBack: () => history.go( -1 ),
   phase: WAITING,
   row: {}
@@ -255,8 +255,8 @@ export const mapStateToProps = state => {
 
 export const mapDispatchToProps = dispatch => ( {
   loadDetail: id => {
-    dispatch( getComplaintDetail( id ) )
+    dispatch( getProgramDetail( id ) )
   }
 } )
 
-export default connect( mapStateToProps, mapDispatchToProps )( ComplaintDetail )
+export default connect( mapStateToProps, mapDispatchToProps )( ProgramDetail )

@@ -9,24 +9,6 @@ describe('reducer::detail', () => {
     })
   })
 
-  it('handles COMPLAINT_DETAIL_RECEIVED actions', () => {
-    const action = {
-      type: types.COMPLAINT_DETAIL_RECEIVED,
-      data: {
-        hits: {
-          hits: [
-            { _source: '123' }
-          ],
-          total: 1,
-        }
-      }
-    }
-    expect(target({}, action)).toEqual({
-      data: '123',
-      error: ''
-    })
-  })
-
   it('handles COMPLAINT_DETAIL_FAILED actions', () => {
     const action = {
       type: types.COMPLAINT_DETAIL_FAILED,

@@ -24,7 +24,24 @@ const fixture = [
     sub_product: 'Qaz',
     submitted_via: 'email',
     timely: 'yes',
-    zip_code: '200XX' 
+    zip_code: '200XX',
+    name: 'ABC Corp',
+    pk: 1234,
+    effective_string: '1/1/18',
+    offered: '1/1/18',
+    issuer: "Acme Bank",
+    agreements: [
+      {
+        issuer: "Acme Bank",
+        name: "Acme Card",
+        offered: "Jan. 15, 2018",
+        pk: 2979,
+        slug: "acme-bank",
+        withdrawn: null,
+        size: '110KB',
+        uri: 'https://consumerfinance.gov'
+      }
+    ]
   }
 ]
 

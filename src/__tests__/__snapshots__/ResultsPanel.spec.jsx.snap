@@ -8,106 +8,17 @@ exports[`component:ReactPanel displays a message when an error has occurred 1`] 
     className="action-bar"
   >
     <div>
-      <h2>
-        Showing 
-        <span>
-          0
-        </span>
-         matches out of 
+      <h4>
+        Showing 
         <span>
           100
         </span>
-         total complaints
-      </h2>
-    </div>
-    <div
-      className="layout-row"
-    >
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-size"
-          onChange={[Function]}
-          value={10}
-        >
-          <option
-            value={10}
-          >
-            Show 
-            10
-             results
-          </option>
-          <option
-            value={25}
-          >
-            Show 
-            25
-             results
-          </option>
-          <option
-            value={50}
-          >
-            Show 
-            50
-             results
-          </option>
-          <option
-            value={100}
-          >
-            Show 
-            100
-             results
-          </option>
-        </select>
-      </div>
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-sort"
-          onChange={[Function]}
-          value={undefined}
-        >
-          <option
-            value="created_date_desc"
-          >
-            Sort by newest to oldest
-          </option>
-          <option
-            value="created_date_asc"
-          >
-            Sort by oldest to newest
-          </option>
-          <option
-            value="relevance_desc"
-          >
-            Sort by relevance
-          </option>
-          <option
-            value="relevance_asc"
-          >
-            Sort by relevance (asc)
-          </option>
-        </select>
-      </div>
-      <h4
-        className="flex-all"
-      >
-        <button
-          className="a-btn a-btn__link"
-          data-gtm_ignore="true"
-          onClick={[Function]}
-        >
-          Export results
-        </button>
+         matched results
       </h4>
     </div>
   </summary>
   <div />
-  <h2>
-    There was a problem executing your search
-  </h2>
+  <h4 />
 </section>
 `;
 
@@ -119,99 +30,12 @@ exports[`component:ReactPanel displays a message when only the narratives are st
     className="action-bar"
   >
     <div>
-      <h2>
-        Showing 
-        <span>
-          1
-        </span>
-         matches out of 
+      <h4>
+        Showing 
         <span>
           100
         </span>
-         total complaints
-      </h2>
-    </div>
-    <div
-      className="layout-row"
-    >
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-size"
-          onChange={[Function]}
-          value={10}
-        >
-          <option
-            value={10}
-          >
-            Show 
-            10
-             results
-          </option>
-          <option
-            value={25}
-          >
-            Show 
-            25
-             results
-          </option>
-          <option
-            value={50}
-          >
-            Show 
-            50
-             results
-          </option>
-          <option
-            value={100}
-          >
-            Show 
-            100
-             results
-          </option>
-        </select>
-      </div>
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-sort"
-          onChange={[Function]}
-          value={undefined}
-        >
-          <option
-            value="created_date_desc"
-          >
-            Sort by newest to oldest
-          </option>
-          <option
-            value="created_date_asc"
-          >
-            Sort by oldest to newest
-          </option>
-          <option
-            value="relevance_desc"
-          >
-            Sort by relevance
-          </option>
-          <option
-            value="relevance_asc"
-          >
-            Sort by relevance (asc)
-          </option>
-        </select>
-      </div>
-      <h4
-        className="flex-all"
-      >
-        <button
-          className="a-btn a-btn__link"
-          data-gtm_ignore="true"
-          onClick={[Function]}
-        >
-          Export results
-        </button>
+         matched results
       </h4>
     </div>
   </summary>
@@ -240,165 +64,82 @@ exports[`component:ReactPanel displays a message when only the narratives are st
       className="card-container"
     >
       <div
+        className="layout-row"
+      >
+        <h3
+          className="to-detail"
+        >
+          1
+          . 
+          <a
+            href="detail/1234"
+          >
+            ABC Corp
+          </a>
+        </h3>
+      </div>
+      <div
         className="card"
       >
         <div
           className="card-left layout-column"
         >
-          <h3
-            className="to-detail"
-          >
-            <a
-              href="detail/1"
-            >
-              1
-            </a>
-          </h3>
           <h4>
-            Company name
+            Issuer name
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "foo",
+                "__html": "Acme Bank",
               }
             }
           />
           <br />
           <h4>
-            Company response to consumer
+            Initial offer date
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "Closed",
+                "__html": "1/1/18",
               }
             }
           />
           <br />
           <h4>
-            Timely response?
+            Program withdrawal date
           </h4>
-          <span
-            className="body-copy"
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "yes",
-              }
-            }
-          />
+          <span>
+            Not applicable, still active
+          </span>
         </div>
         <div
           className="card-right layout-column"
         >
-          <div
-            className="layout-row"
-          >
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Date received:
-              </h4>
-              <span
-                className="body-copy"
-              >
-                <span>
-                  2/3/2013
-                </span>
-              </span>
-            </div>
-            <div
-              className="spacer"
-            />
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Consumer's state:
-              </h4>
-              <span
-                className="body-copy"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "DC",
-                  }
-                }
-              />
-            </div>
-          </div>
-          <br />
           <h4>
-            Product
+            Download most recent agreements for this card
           </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Bar",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-product:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Qaz",
-                }
-              }
-            />
-          </div>
-          <br />
-          <h4>
-            Issue
-          </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Foo",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-issue:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Baz",
-                }
-              }
-            />
-          </div>
-          <div>
+          <p>
             <br />
-            <h4>
-              Consumer Complaint Narrative
-            </h4>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Lorem Ipsum",
-                }
-              }
-            />
-          </div>
+            <a
+              href="https://consumerfinance.gov"
+            >
+              ABC Corp
+            </a>
+             (
+            110KB
+            )
+          </p>
+          <p>
+            <a
+              href="detail/1234"
+            >
+              View all agreements for 
+              ABC Corp
+            </a>
+          </p>
         </div>
       </div>
     </li>
@@ -482,99 +223,12 @@ exports[`component:ReactPanel displays a message when the data has issues 1`] = 
     className="action-bar"
   >
     <div>
-      <h2>
-        Showing 
-        <span>
-          1
-        </span>
-         matches out of 
+      <h4>
+        Showing 
         <span>
           100
         </span>
-         total complaints
-      </h2>
-    </div>
-    <div
-      className="layout-row"
-    >
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-size"
-          onChange={[Function]}
-          value={10}
-        >
-          <option
-            value={10}
-          >
-            Show 
-            10
-             results
-          </option>
-          <option
-            value={25}
-          >
-            Show 
-            25
-             results
-          </option>
-          <option
-            value={50}
-          >
-            Show 
-            50
-             results
-          </option>
-          <option
-            value={100}
-          >
-            Show 
-            100
-             results
-          </option>
-        </select>
-      </div>
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-sort"
-          onChange={[Function]}
-          value={undefined}
-        >
-          <option
-            value="created_date_desc"
-          >
-            Sort by newest to oldest
-          </option>
-          <option
-            value="created_date_asc"
-          >
-            Sort by oldest to newest
-          </option>
-          <option
-            value="relevance_desc"
-          >
-            Sort by relevance
-          </option>
-          <option
-            value="relevance_asc"
-          >
-            Sort by relevance (asc)
-          </option>
-        </select>
-      </div>
-      <h4
-        className="flex-all"
-      >
-        <button
-          className="a-btn a-btn__link"
-          data-gtm_ignore="true"
-          onClick={[Function]}
-        >
-          Export results
-        </button>
+         matched results
       </h4>
     </div>
   </summary>
@@ -602,165 +256,82 @@ exports[`component:ReactPanel displays a message when the data has issues 1`] = 
       className="card-container"
     >
       <div
+        className="layout-row"
+      >
+        <h3
+          className="to-detail"
+        >
+          1
+          . 
+          <a
+            href="detail/1234"
+          >
+            ABC Corp
+          </a>
+        </h3>
+      </div>
+      <div
         className="card"
       >
         <div
           className="card-left layout-column"
         >
-          <h3
-            className="to-detail"
-          >
-            <a
-              href="detail/1"
-            >
-              1
-            </a>
-          </h3>
           <h4>
-            Company name
+            Issuer name
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "foo",
+                "__html": "Acme Bank",
               }
             }
           />
           <br />
           <h4>
-            Company response to consumer
+            Initial offer date
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "Closed",
+                "__html": "1/1/18",
               }
             }
           />
           <br />
           <h4>
-            Timely response?
+            Program withdrawal date
           </h4>
-          <span
-            className="body-copy"
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "yes",
-              }
-            }
-          />
+          <span>
+            Not applicable, still active
+          </span>
         </div>
         <div
           className="card-right layout-column"
         >
-          <div
-            className="layout-row"
-          >
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Date received:
-              </h4>
-              <span
-                className="body-copy"
-              >
-                <span>
-                  2/3/2013
-                </span>
-              </span>
-            </div>
-            <div
-              className="spacer"
-            />
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Consumer's state:
-              </h4>
-              <span
-                className="body-copy"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "DC",
-                  }
-                }
-              />
-            </div>
-          </div>
-          <br />
           <h4>
-            Product
+            Download most recent agreements for this card
           </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Bar",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-product:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Qaz",
-                }
-              }
-            />
-          </div>
-          <br />
-          <h4>
-            Issue
-          </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Foo",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-issue:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Baz",
-                }
-              }
-            />
-          </div>
-          <div>
+          <p>
             <br />
-            <h4>
-              Consumer Complaint Narrative
-            </h4>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Lorem Ipsum",
-                }
-              }
-            />
-          </div>
+            <a
+              href="https://consumerfinance.gov"
+            >
+              ABC Corp
+            </a>
+             (
+            110KB
+            )
+          </p>
+          <p>
+            <a
+              href="detail/1234"
+            >
+              View all agreements for 
+              ABC Corp
+            </a>
+          </p>
         </div>
       </div>
     </li>
@@ -844,99 +415,12 @@ exports[`component:ReactPanel displays a message when the data is stale 1`] = `
     className="action-bar"
   >
     <div>
-      <h2>
-        Showing 
-        <span>
-          1
-        </span>
-         matches out of 
+      <h4>
+        Showing 
         <span>
           100
         </span>
-         total complaints
-      </h2>
-    </div>
-    <div
-      className="layout-row"
-    >
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-size"
-          onChange={[Function]}
-          value={10}
-        >
-          <option
-            value={10}
-          >
-            Show 
-            10
-             results
-          </option>
-          <option
-            value={25}
-          >
-            Show 
-            25
-             results
-          </option>
-          <option
-            value={50}
-          >
-            Show 
-            50
-             results
-          </option>
-          <option
-            value={100}
-          >
-            Show 
-            100
-             results
-          </option>
-        </select>
-      </div>
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-sort"
-          onChange={[Function]}
-          value={undefined}
-        >
-          <option
-            value="created_date_desc"
-          >
-            Sort by newest to oldest
-          </option>
-          <option
-            value="created_date_asc"
-          >
-            Sort by oldest to newest
-          </option>
-          <option
-            value="relevance_desc"
-          >
-            Sort by relevance
-          </option>
-          <option
-            value="relevance_asc"
-          >
-            Sort by relevance (asc)
-          </option>
-        </select>
-      </div>
-      <h4
-        className="flex-all"
-      >
-        <button
-          className="a-btn a-btn__link"
-          data-gtm_ignore="true"
-          onClick={[Function]}
-        >
-          Export results
-        </button>
+         matched results
       </h4>
     </div>
   </summary>
@@ -965,165 +449,82 @@ exports[`component:ReactPanel displays a message when the data is stale 1`] = `
       className="card-container"
     >
       <div
+        className="layout-row"
+      >
+        <h3
+          className="to-detail"
+        >
+          1
+          . 
+          <a
+            href="detail/1234"
+          >
+            ABC Corp
+          </a>
+        </h3>
+      </div>
+      <div
         className="card"
       >
         <div
           className="card-left layout-column"
         >
-          <h3
-            className="to-detail"
-          >
-            <a
-              href="detail/1"
-            >
-              1
-            </a>
-          </h3>
           <h4>
-            Company name
+            Issuer name
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "foo",
+                "__html": "Acme Bank",
               }
             }
           />
           <br />
           <h4>
-            Company response to consumer
+            Initial offer date
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "Closed",
+                "__html": "1/1/18",
               }
             }
           />
           <br />
           <h4>
-            Timely response?
+            Program withdrawal date
           </h4>
-          <span
-            className="body-copy"
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "yes",
-              }
-            }
-          />
+          <span>
+            Not applicable, still active
+          </span>
         </div>
         <div
           className="card-right layout-column"
         >
-          <div
-            className="layout-row"
-          >
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Date received:
-              </h4>
-              <span
-                className="body-copy"
-              >
-                <span>
-                  2/3/2013
-                </span>
-              </span>
-            </div>
-            <div
-              className="spacer"
-            />
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Consumer's state:
-              </h4>
-              <span
-                className="body-copy"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "DC",
-                  }
-                }
-              />
-            </div>
-          </div>
-          <br />
           <h4>
-            Product
+            Download most recent agreements for this card
           </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Bar",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-product:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Qaz",
-                }
-              }
-            />
-          </div>
-          <br />
-          <h4>
-            Issue
-          </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Foo",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-issue:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Baz",
-                }
-              }
-            />
-          </div>
-          <div>
+          <p>
             <br />
-            <h4>
-              Consumer Complaint Narrative
-            </h4>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Lorem Ipsum",
-                }
-              }
-            />
-          </div>
+            <a
+              href="https://consumerfinance.gov"
+            >
+              ABC Corp
+            </a>
+             (
+            110KB
+            )
+          </p>
+          <p>
+            <a
+              href="detail/1234"
+            >
+              View all agreements for 
+              ABC Corp
+            </a>
+          </p>
         </div>
       </div>
     </li>
@@ -1207,99 +608,12 @@ exports[`component:ReactPanel displays a message when there are no results 1`] =
     className="action-bar"
   >
     <div>
-      <h2>
-        Showing 
-        <span>
-          0
-        </span>
-         matches out of 
+      <h4>
+        Showing 
         <span>
           100
         </span>
-         total complaints
-      </h2>
-    </div>
-    <div
-      className="layout-row"
-    >
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-size"
-          onChange={[Function]}
-          value={10}
-        >
-          <option
-            value={10}
-          >
-            Show 
-            10
-             results
-          </option>
-          <option
-            value={25}
-          >
-            Show 
-            25
-             results
-          </option>
-          <option
-            value={50}
-          >
-            Show 
-            50
-             results
-          </option>
-          <option
-            value={100}
-          >
-            Show 
-            100
-             results
-          </option>
-        </select>
-      </div>
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-sort"
-          onChange={[Function]}
-          value={undefined}
-        >
-          <option
-            value="created_date_desc"
-          >
-            Sort by newest to oldest
-          </option>
-          <option
-            value="created_date_asc"
-          >
-            Sort by oldest to newest
-          </option>
-          <option
-            value="relevance_desc"
-          >
-            Sort by relevance
-          </option>
-          <option
-            value="relevance_asc"
-          >
-            Sort by relevance (asc)
-          </option>
-        </select>
-      </div>
-      <h4
-        className="flex-all"
-      >
-        <button
-          className="a-btn a-btn__link"
-          data-gtm_ignore="true"
-          onClick={[Function]}
-        >
-          Export results
-        </button>
+         matched results
       </h4>
     </div>
   </summary>
@@ -1318,99 +632,12 @@ exports[`component:ReactPanel only displays data message when both types are sta
     className="action-bar"
   >
     <div>
-      <h2>
-        Showing 
-        <span>
-          1
-        </span>
-         matches out of 
+      <h4>
+        Showing 
         <span>
           100
         </span>
-         total complaints
-      </h2>
-    </div>
-    <div
-      className="layout-row"
-    >
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-size"
-          onChange={[Function]}
-          value={10}
-        >
-          <option
-            value={10}
-          >
-            Show 
-            10
-             results
-          </option>
-          <option
-            value={25}
-          >
-            Show 
-            25
-             results
-          </option>
-          <option
-            value={50}
-          >
-            Show 
-            50
-             results
-          </option>
-          <option
-            value={100}
-          >
-            Show 
-            100
-             results
-          </option>
-        </select>
-      </div>
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-sort"
-          onChange={[Function]}
-          value={undefined}
-        >
-          <option
-            value="created_date_desc"
-          >
-            Sort by newest to oldest
-          </option>
-          <option
-            value="created_date_asc"
-          >
-            Sort by oldest to newest
-          </option>
-          <option
-            value="relevance_desc"
-          >
-            Sort by relevance
-          </option>
-          <option
-            value="relevance_asc"
-          >
-            Sort by relevance (asc)
-          </option>
-        </select>
-      </div>
-      <h4
-        className="flex-all"
-      >
-        <button
-          className="a-btn a-btn__link"
-          data-gtm_ignore="true"
-          onClick={[Function]}
-        >
-          Export results
-        </button>
+         matched results
       </h4>
     </div>
   </summary>
@@ -1439,165 +666,82 @@ exports[`component:ReactPanel only displays data message when both types are sta
       className="card-container"
     >
       <div
+        className="layout-row"
+      >
+        <h3
+          className="to-detail"
+        >
+          1
+          . 
+          <a
+            href="detail/1234"
+          >
+            ABC Corp
+          </a>
+        </h3>
+      </div>
+      <div
         className="card"
       >
         <div
           className="card-left layout-column"
         >
-          <h3
-            className="to-detail"
-          >
-            <a
-              href="detail/1"
-            >
-              1
-            </a>
-          </h3>
           <h4>
-            Company name
+            Issuer name
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "foo",
+                "__html": "Acme Bank",
               }
             }
           />
           <br />
           <h4>
-            Company response to consumer
+            Initial offer date
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "Closed",
+                "__html": "1/1/18",
               }
             }
           />
           <br />
           <h4>
-            Timely response?
+            Program withdrawal date
           </h4>
-          <span
-            className="body-copy"
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "yes",
-              }
-            }
-          />
+          <span>
+            Not applicable, still active
+          </span>
         </div>
         <div
           className="card-right layout-column"
         >
-          <div
-            className="layout-row"
-          >
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Date received:
-              </h4>
-              <span
-                className="body-copy"
-              >
-                <span>
-                  2/3/2013
-                </span>
-              </span>
-            </div>
-            <div
-              className="spacer"
-            />
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Consumer's state:
-              </h4>
-              <span
-                className="body-copy"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "DC",
-                  }
-                }
-              />
-            </div>
-          </div>
-          <br />
           <h4>
-            Product
+            Download most recent agreements for this card
           </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Bar",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-product:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Qaz",
-                }
-              }
-            />
-          </div>
-          <br />
-          <h4>
-            Issue
-          </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Foo",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-issue:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Baz",
-                }
-              }
-            />
-          </div>
-          <div>
+          <p>
             <br />
-            <h4>
-              Consumer Complaint Narrative
-            </h4>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Lorem Ipsum",
-                }
-              }
-            />
-          </div>
+            <a
+              href="https://consumerfinance.gov"
+            >
+              ABC Corp
+            </a>
+             (
+            110KB
+            )
+          </p>
+          <p>
+            <a
+              href="detail/1234"
+            >
+              View all agreements for 
+              ABC Corp
+            </a>
+          </p>
         </div>
       </div>
     </li>
@@ -1681,99 +825,12 @@ exports[`component:ReactPanel renders without crashing 1`] = `
     className="action-bar"
   >
     <div>
-      <h2>
-        Showing 
-        <span>
-          1
-        </span>
-         matches out of 
+      <h4>
+        Showing 
         <span>
           100
         </span>
-         total complaints
-      </h2>
-    </div>
-    <div
-      className="layout-row"
-    >
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-size"
-          onChange={[Function]}
-          value={10}
-        >
-          <option
-            value={10}
-          >
-            Show 
-            10
-             results
-          </option>
-          <option
-            value={25}
-          >
-            Show 
-            25
-             results
-          </option>
-          <option
-            value={50}
-          >
-            Show 
-            50
-             results
-          </option>
-          <option
-            value={100}
-          >
-            Show 
-            100
-             results
-          </option>
-        </select>
-      </div>
-      <div
-        className="cf-select flex-fixed"
-      >
-        <select
-          id="choose-sort"
-          onChange={[Function]}
-          value={undefined}
-        >
-          <option
-            value="created_date_desc"
-          >
-            Sort by newest to oldest
-          </option>
-          <option
-            value="created_date_asc"
-          >
-            Sort by oldest to newest
-          </option>
-          <option
-            value="relevance_desc"
-          >
-            Sort by relevance
-          </option>
-          <option
-            value="relevance_asc"
-          >
-            Sort by relevance (asc)
-          </option>
-        </select>
-      </div>
-      <h4
-        className="flex-all"
-      >
-        <button
-          className="a-btn a-btn__link"
-          data-gtm_ignore="true"
-          onClick={[Function]}
-        >
-          Export results
-        </button>
+         matched results
       </h4>
     </div>
   </summary>
@@ -1785,165 +842,82 @@ exports[`component:ReactPanel renders without crashing 1`] = `
       className="card-container"
     >
       <div
+        className="layout-row"
+      >
+        <h3
+          className="to-detail"
+        >
+          1
+          . 
+          <a
+            href="detail/1234"
+          >
+            ABC Corp
+          </a>
+        </h3>
+      </div>
+      <div
         className="card"
       >
         <div
           className="card-left layout-column"
         >
-          <h3
-            className="to-detail"
-          >
-            <a
-              href="detail/1"
-            >
-              1
-            </a>
-          </h3>
           <h4>
-            Company name
+            Issuer name
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "foo",
+                "__html": "Acme Bank",
               }
             }
           />
           <br />
           <h4>
-            Company response to consumer
+            Initial offer date
           </h4>
           <span
             className="body-copy"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "Closed",
+                "__html": "1/1/18",
               }
             }
           />
           <br />
           <h4>
-            Timely response?
+            Program withdrawal date
           </h4>
-          <span
-            className="body-copy"
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "yes",
-              }
-            }
-          />
+          <span>
+            Not applicable, still active
+          </span>
         </div>
         <div
           className="card-right layout-column"
         >
-          <div
-            className="layout-row"
-          >
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Date received:
-              </h4>
-              <span
-                className="body-copy"
-              >
-                <span>
-                  2/3/2013
-                </span>
-              </span>
-            </div>
-            <div
-              className="spacer"
-            />
-            <div
-              className="layout-row"
-            >
-              <h4>
-                Consumer's state:
-              </h4>
-              <span
-                className="body-copy"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "DC",
-                  }
-                }
-              />
-            </div>
-          </div>
-          <br />
           <h4>
-            Product
+            Download most recent agreements for this card
           </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Bar",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-product:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Qaz",
-                }
-              }
-            />
-          </div>
-          <br />
-          <h4>
-            Issue
-          </h4>
-          <h3
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "Foo",
-              }
-            }
-          />
-          <div
-            className="layout-row"
-          >
-            <span
-              className="body-copy subitem"
-            >
-              Sub-issue:
-            </span>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Baz",
-                }
-              }
-            />
-          </div>
-          <div>
+          <p>
             <br />
-            <h4>
-              Consumer Complaint Narrative
-            </h4>
-            <span
-              className="body-copy"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Lorem Ipsum",
-                }
-              }
-            />
-          </div>
+            <a
+              href="https://consumerfinance.gov"
+            >
+              ABC Corp
+            </a>
+             (
+            110KB
+            )
+          </p>
+          <p>
+            <a
+              href="detail/1234"
+            >
+              View all agreements for 
+              ABC Corp
+            </a>
+          </p>
         </div>
       </div>
     </li>

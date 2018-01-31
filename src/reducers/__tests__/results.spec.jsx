@@ -53,43 +53,6 @@ describe('reducer:results', () => {
       }
     })
 
-    it('extracts the important data from inside the returned data', () => {
-      expect(target({doc_count: 0, error: 'foo'}, action)).toEqual({
-        activeCall: '',
-        doc_count: 162576,
-        error: '',
-        lastUpdated: '2017-07-10T00:00:00.000Z',
-        lastIndexed: '2017-07-11T00:00:00.000Z',
-        hasDataIssue: undefined,
-        isDataStale: undefined,
-        isLoading: false,
-        items: [
-          { a: '123' },
-          { a: '456' }
-        ],
-        total: 2
-      })
-    })
-
-    it('replaces text with highlighted text if it exists', () => {
-      action.data.hits.hits[0].highlight = { a: [ '<em>123</em>' ] }
-
-      expect(target({doc_count: 0, error: 'foo'}, action)).toEqual({
-        activeCall: '',
-        doc_count: 162576,
-        error: '',
-        lastUpdated: '2017-07-10T00:00:00.000Z',
-        lastIndexed: '2017-07-11T00:00:00.000Z',
-        hasDataIssue: undefined,
-        isDataStale: undefined,
-        isLoading: false,
-        items: [
-          { a: '<em>123</em>' },
-          { a: '456' }
-        ],
-        total: 2
-      })
-    })
   })
 
   it('handles COMPLAINTS_FAILED actions', () => {

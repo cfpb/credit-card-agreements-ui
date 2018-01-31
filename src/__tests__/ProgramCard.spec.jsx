@@ -1,6 +1,6 @@
 import React from 'react';
 import { IntlProvider } from 'react-intl';
-import ComplaintCard from '../ComplaintCard';
+import ProgramCard from '../ProgramCard';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router';
 
@@ -8,7 +8,6 @@ describe('initial state', () => {
   let item;
   beforeEach(() => {
     item = {
-      company: 'ABC Corp',
       company_public_response: 'Lorem',
       company_response: 'Ipsum',
       complaint_id: '99990909',
@@ -25,7 +24,24 @@ describe('initial state', () => {
       submitted_via: 'Email',
       timely: 'Yes',
       zip_code: '20008',
-      foo: 'do not show this'
+      foo: 'do not show this',
+      name: 'ABC Corp',
+      pk: 1234,
+      effective_string: '1/1/18',
+      offered: '1/1/18',
+      issuer: "Acme Bank",
+      agreements: [
+        {
+          issuer: "Acme Bank",
+          name: "Acme Card",
+          offered: "Jan. 15, 2018",
+          pk: 2979,
+          slug: "acme-bank",
+          withdrawn: null,
+          size: '110KB',
+          uri: 'https://consumerfinance.gov'
+        }
+      ]
     };
   })
 
@@ -33,7 +49,7 @@ describe('initial state', () => {
     const target = renderer.create(
       <MemoryRouter>
         <IntlProvider locale="en">
-          <ComplaintCard key={item.complaint_id} row={item} />
+          <ProgramCard key={item.complaint_id} row={item} />
         </IntlProvider>
       </MemoryRouter>
     );
@@ -48,7 +64,7 @@ describe('initial state', () => {
     const target = renderer.create(
       <MemoryRouter>
         <IntlProvider locale="en">
-          <ComplaintCard key={item.complaint_id} row={item} />
+          <ProgramCard key={item.complaint_id} row={item} />
         </IntlProvider>
       </MemoryRouter>
     );
@@ -79,7 +95,7 @@ ocean with me.";
     const target = renderer.create(
       <MemoryRouter>
         <IntlProvider locale="en">
-          <ComplaintCard key={item.complaint_id} row={item} />
+          <ProgramCard key={item.complaint_id} row={item} />
         </IntlProvider>
       </MemoryRouter>
     );
@@ -94,7 +110,7 @@ ocean with me.";
     const target = renderer.create(
       <MemoryRouter>
         <IntlProvider locale="en">
-          <ComplaintCard key={item.complaint_id} row={item} />
+          <ProgramCard key={item.complaint_id} row={item} />
         </IntlProvider>
       </MemoryRouter>
     );
@@ -109,7 +125,7 @@ ocean with me.";
     const target = renderer.create(
       <MemoryRouter>
         <IntlProvider locale="en">
-          <ComplaintCard key={item.complaint_id} row={item} />
+          <ProgramCard key={item.complaint_id} row={item} />
         </IntlProvider>
       </MemoryRouter>
     );
@@ -124,7 +140,7 @@ ocean with me.";
     const target = renderer.create(
       <MemoryRouter>
         <IntlProvider locale="en">
-          <ComplaintCard key={item.complaint_id} row={item} />
+          <ProgramCard key={item.complaint_id} row={item} />
         </IntlProvider>
       </MemoryRouter>
     );

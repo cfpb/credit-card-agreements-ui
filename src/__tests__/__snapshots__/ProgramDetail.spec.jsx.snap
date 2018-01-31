@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component::ProgramDetail snapshots renders ERROR phase 1`] = `
+<section
+  className="card-container learning"
+>
+  <h1>
+    There was a problem retrieving 
+    123456789
+  </h1>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots renders WAITING phase 1`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots renders without a narrative 1`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots renders without a sub-issue 1`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots renders without a sub-product 1`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots renders without crashing 1`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots supports "Consumer Consent Provided" icons 1`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots supports "Consumer Consent Provided" icons 2`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots supports "Consumer Consent Provided" icons 3`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots supports "Consumer Consent Provided" icons 4`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots supports "Consumer Consent Provided" icons 5`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots supports "Timely Response" icons 1`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`component::ProgramDetail snapshots supports "Timely Response" icons 2`] = `
+<section
+  className="card-container learning"
+>
+  <section
+    className="light-box"
+  >
+    <div
+      className="loading-box"
+    >
+      <span
+        className="cf-icon cf-icon-update cf-icon__before cf-icon__spin"
+      />
+      <span>
+        This page is loading
+      </span>
+    </div>
+  </section>
+</section>
+`;

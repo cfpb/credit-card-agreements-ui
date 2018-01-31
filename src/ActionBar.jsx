@@ -38,9 +38,7 @@ export class ActionBar extends React.Component {
         <summary className="action-bar">
           <div>
             <h4>
-              Showing&nbsp;
-              <FormattedNumber value={this.props.total} />
-              &nbsp;matched results
+              Showing <FormattedNumber value={this.props.total} /> matched results
             </h4>
           </div>
         </summary>

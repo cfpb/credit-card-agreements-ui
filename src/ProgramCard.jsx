@@ -1,14 +1,14 @@
-import './ComplaintCard.less'
+import './ProgramCard.less'
 import { FormattedDate } from 'react-intl'
 import React from 'react'
 
 const MAX_NARRATIVE = 300
 
-export default class ComplaintCard extends React.Component {
+export default class ProgramCard extends React.Component {
   render() {
     const row = this.props.row;
     const complaintIdPath = 'detail/' + row.pk
-    const index = this.props.index + 1
+    const index = ( this.props.index || 0 ) + 1
 
     return (
       <li className="card-container">
@@ -37,7 +37,7 @@ export default class ComplaintCard extends React.Component {
           <div className="card-right layout-column">
             <h4>Download most recent agreements for this card</h4>
             { row.agreements.map( agreement =>
-              <p>
+              <p key={ agreement.uri }>
                 { agreement.effective_string }<br />
                 <a href={ agreement.uri } key={ agreement.uri }>
                   { row.name }

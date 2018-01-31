@@ -1,65 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`initial state renders without crashing 1`] = `
-<header
-  className="content_hero"
+<div
+  className="wrapper content_wrapper"
 >
-  <h1
-    className="content-header"
+  <div
+    className="content_main"
   >
-    Consumer Complaint Database
-  </h1>
-  <h4
-    className="content-header"
+    <header
+      className="content_hero"
+    >
+      <h1
+        className="content-header"
+      >
+        Credit Card Agreement Database
+      </h1>
+      <p>
+        If you are an issuer, email 
+        <a
+          href="mailto:CardAgreements@consumerfinance.gov"
+        >
+          CardAgreements@consumerfinance.gov
+        </a>
+         for agreement submission instructions. Sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi.
+      </p>
+    </header>
+  </div>
+  <aside
+    className="content_sidebar o-sidebar-content"
   >
-    Beta
-  </h4>
-  <p>
-    Consumer complaints are added to this public database after the company has responded to the complaint, confirming a commercial relationship with the consumer, or after they've had the complaint for 15 calendar days, whichever comes first. We don’t verify all the facts alleged in complaints, but we do give companies the opportunity to publicly respond to complaints by selecting responses from a pre-populated list. Company-level information should be considered in the context of company size and/or market share.
-  </p>
-  <ul
-    className="m-list m-list__horizontal"
-  >
-    <li
-      className="m-list_item"
+    <div
+      className="block"
     >
-      <button
-        className="a-btn a-btn__link"
-        onClick={[Function]}
+      <div
+        className="m-related-links"
       >
-        More about the complaint database
-      </button>
-    </li>
-    <li
-      className="m-list_item"
-    >
-      <a
-        href="https://www.consumerfinance.gov/complaint/data-use/"
-        target="_blank"
-      >
-        How we use complaint data
-      </a>
-    </li>
-    <li
-      className="m-list_item"
-    >
-      <a
-        href="https://cfpb.github.io/api/ccdb/"
-        target="_blank"
-      >
-        Technical documentation
-      </a>
-    </li>
-    <li
-      className="m-list_item"
-    >
-      <a
-        href="https://data.consumerfinance.gov/dataset/Consumer-Complaints/s6ew-h6mp"
-        target="_blank"
-      >
-        View complaint data in Socrata
-      </a>
-    </li>
-  </ul>
-</header>
+        <header
+          className="m-slug-header"
+        >
+          <h2
+            className="a-heading"
+          >
+            More on the credit card agreement database
+          </h2>
+        </header>
+        <p>
+          View an archive of agreements submitted to the CFPB prior to March 2018.
+        </p>
+        <p>
+          <a
+            href="https://www.consumerfinance.gov/credit-cards/agreements/#dwnld"
+          >
+            View the archives
+          </a>
+        </p>
+        <p>
+          Credit card agreement database disclaimer
+        </p>
+        <p>
+          <a
+            href="#"
+          >
+            Read credit card database disclaimer
+          </a>
+        </p>
+      </div>
+    </div>
+  </aside>
+</div>
 `;

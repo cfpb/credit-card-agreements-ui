@@ -1,11 +1,11 @@
 import './ResultsPanel.less'
 import ActionBar from './ActionBar'
 import { bindAll } from './utils'
-import ComplaintCard from './ComplaintCard'
 import { connect } from 'react-redux'
 import Loading from './Dialogs/Loading'
 import { MemoryRouter } from 'react-router'
 import Pagination from './Pagination'
+import ProgramCard from './ProgramCard'
 import React from 'react'
 import Warning from './Warning'
 
@@ -124,7 +124,7 @@ export class ResultsPanel extends React.Component {
     return (
       <ul className="cards-panel">
         { this.props.items.map(
-          ( item, i ) => <ComplaintCard key={item.slug} row={item} index={i} />
+          ( item, i ) => <ProgramCard key={item.slug} row={item} index={i} key={i} />
         )}
       </ul>
     )

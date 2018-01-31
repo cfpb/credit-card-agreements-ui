@@ -1,6 +1,6 @@
-import ReduxComplaintDetail, {
-  ComplaintDetail, mapDispatchToProps
-} from '../ComplaintDetail'
+import ReduxProgramDetail, {
+  ProgramDetail, mapDispatchToProps
+} from '../ProgramDetail'
 import configureMockStore from 'redux-mock-store'
 import { IntlProvider } from 'react-intl'
 import { Provider } from 'react-redux'
@@ -43,7 +43,7 @@ function setupEnzyme() {
     loadDetail: jest.fn()
   }
 
-  const target = shallow(<ComplaintDetail {...props} />)
+  const target = shallow(<ProgramDetail {...props} />)
 
   return {
     props,
@@ -66,7 +66,7 @@ function setupSnapshot(overrides={}, error='') {
   const target = renderer.create(
     <Provider store={store}>
       <IntlProvider locale="en">
-        <ReduxComplaintDetail complaint_id='123456789' />
+        <ReduxProgramDetail complaint_id='123456789' />
       </IntlProvider>
     </Provider>
   )
@@ -74,7 +74,7 @@ function setupSnapshot(overrides={}, error='') {
   return target
 }
 
-describe('component::ComplaintDetail', () => {
+describe('component::ProgramDetail', () => {
   describe('snapshots', () => {
     it('renders without crashing', () => {
       const target = setupSnapshot()
@@ -136,7 +136,7 @@ describe('component::ComplaintDetail', () => {
       const target = renderer.create(
         <Provider store={store}>
           <IntlProvider locale="en">
-            <ReduxComplaintDetail complaint_id='123456789' />
+            <ReduxProgramDetail complaint_id='123456789' />
           </IntlProvider>
         </Provider>
       )
@@ -149,28 +149,6 @@ describe('component::ComplaintDetail', () => {
       const target = setupSnapshot({}, 'Error fetching data')
       const tree = target.toJSON()
       expect(tree).toMatchSnapshot()
-    })
-  })
-
-  describe('navigation', () => {
-    it('takes the user back to the previous page', () => {
-      global.history.go = jest.fn()
-
-      const {target} = setupEnzyme()
-      const back = target.find('.back-to-search button')
-      back.simulate('click')
-      expect(global.history.go).toHaveBeenCalledWith(-1)
-    })
-
-    it('takes the user back to the home page', () => {
-      const orig = document.referrer
-      Object.defineProperty(document, 'referrer', {value: ''})
-      const {target} = setupEnzyme()
-      Object.defineProperty(document, 'referrer', {value: orig})
-
-      const back = target.find('.back-to-search button')
-      back.simulate('click')
-      expect(document.URL).toEqual('http://localhost/')
     })
   })
 })
