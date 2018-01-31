@@ -1,4 +1,4 @@
-# Credit Card Agreement Database Prototype
+# Credit Card Agreement Database Prototype [![Travis](https://img.shields.io/travis/cfpb/credit-card-agreements-ui.svg?style=flat-square)](https://travis-ci.org/cfpb/credit-card-agreements-ui) 
 
 A reenvisioning of CFPB's [credit card agreement database](https://www.consumerfinance.gov/credit-cards/agreements/). Based on the excellent [ccdb5-ui](https://github.com/cfpb/ccdb5-ui/).
 
