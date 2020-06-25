@@ -10,7 +10,7 @@ A reenvisioning of CFPB's [credit card agreement database](https://www.consumerf
 ## Installation
 
 ```bash
-git clone https://github.cfpb.gov/CFGOV/credit-card-agreements-ui
+git clone https://github.com/cfpb/credit-card-agreements-ui
 cd credit-card-agreements-ui
 
 # Setup python development
